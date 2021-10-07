@@ -1,0 +1,222 @@
+
+.logo img {
+    position: fixed;
+    width: 10%;
+    top: 10px;
+    left: 20px;
+}
+
+.topnavi {
+    position: fixed;
+    text-decoration: none;
+    font-family: Roboto, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: #870000;
+    top: 30px;
+    right: 50px;
+}
+
+a[href^="#"] {
+  color: #870000;
+}
+
+
+/*referenced https://tobiasahlin.com/blog/css-trick-animating-link-underlines/ for
+the animation*/
+a[href^="#"]::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 13%;
+    height: 2px;
+    bottom: 0;
+    left: 2px;
+    background-color: #870000;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+  }
+
+  a[href^="#"]:hover::before {
+      transform: scaleX(1);
+  }
+ 
+ .container {
+    position: absolute;
+    text-align: center;
+    width: 100%;
+    top: 100px;
+  }
+  
+  /* Make the image responsive */
+  .container img {
+    width: 100%;
+    height: auto;
+  }
+
+  .container .copy1 {
+    position: absolute;
+    font-size: 40px;
+    width: 800px;
+    top: 180px;
+    left: 450px;
+    font-weight: bold;
+    font-style: italic;
+    font-family: Roboto, Arial, sans-serif;
+  }
+
+  .container .copy2 {
+    position: absolute;
+    font-size: 25px;
+    width: 550px;
+    top: 300px;
+    left: 550px;
+    font-style: italic;
+    font-family: Roboto, Arial, sans-serif;
+  }
+
+  .container .btn1 {
+    position: absolute;
+    top: 450px;
+    left: 700px;
+    width: 250px;
+    background-color: #870000;
+    color: white;
+    text-decoration: none;
+    font-size: 22px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 50px;
+    font-family: Roboto, Arial, sans-serif;
+  }
+  
+  .container .btn2 {
+    position: absolute;
+    top: 520px;
+    left: 700px;
+    width: 250px;
+    background-color: #870000;
+    color: white;
+    text-decoration: none;
+    font-size: 22px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 50px;
+    font-family: Roboto, Arial, sans-serif;
+  }
+
+
+  .container .btn1:hover, .btn2:hover {
+    background-color: black;
+  }
+
+.order {
+  position: relative;
+  top: 80px;
+  left: 60px;
+}
+
+  .order h1 {
+    position: absolute;
+    font-family: Roboto, Arial, sans-serif;
+    font-style: italic;
+    font-size: 30px;
+    top: 20px;
+  }
+
+  .order h2 {
+    position: absolute;
+    font-family: Roboto, Arial, sans-serif;
+    font-size: 24px;
+    color: #870000;
+    top: 70px;
+  }
+
+  .order-container1 {
+    position: absolute;
+    width: 500px;
+    height: 183px;
+    top: 140px;
+    border-style: solid;
+    border-color: #C4C4C4;
+    border-width: 1px;
+  }
+
+    .order h3 {
+      position: absolute;
+      font-family: Roboto, Arial, sans-serif;
+      font-size: 17px;
+      top: 50px;
+      left: 30px;
+    }
+
+    .order h4 {
+      position: absolute;
+      font-family: Roboto, Arial, sans-serif;
+      font-size: 17px;
+      font-weight:200;
+      top: 75px;
+      left: 30px;
+    }
+
+    .order img {
+      position: absolute;
+      width: 250px;
+      height: 183px;
+      right: 0px;
+    }
+  
+  .order-container2  {
+    position: absolute;
+    width: 500px;
+    height: 183px;
+    top: 350px;
+    border-style: solid;
+    border-color: #C4C4C4;
+    border-width: 1px;
+  }
+
+  .order-container3  {
+    position: absolute;
+    width: 500px;
+    height: 183px;
+    top: 560px;
+    border-style: solid;
+    border-color: #C4C4C4;
+    border-width: 1px;
+  } 
+
+  .order-container4  {
+    position: absolute;
+    width: 500px;
+    height: 183px;
+    top: 140px;
+    left: 700px;
+    border-style: solid;
+    border-color: #C4C4C4;
+    border-width: 1px;
+  } 
+
+  .order-container5  {
+    position: absolute;
+    width: 500px;
+    height: 183px;
+    top: 350px;
+    left: 700px;
+    border-style: solid;
+    border-color: #C4C4C4;
+    border-width: 1px;
+  } 
+
+  .order-container6  {
+    position: absolute;
+    width: 500px;
+    height: 183px;
+    top: 560px;
+    left: 700px;
+    border-style: solid;
+    border-color: #C4C4C4;
+    border-width: 1px;
+  } 
