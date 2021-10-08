@@ -8,70 +8,64 @@
 .topnavi {
     position: fixed;
     text-decoration: none;
-    font-family: "Open Sans", Roboto, Arial, sans-serif;
+    font-family: "Open Sans SemiCondensed", Roboto, Arial, sans-serif;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 25px;
     color: #870000;
     top: 30px;
     right: 50px;
 }
-
-a[href^="#"] {
-  color: #870000;
-}
-
-
-/*referenced https://tobiasahlin.com/blog/css-trick-animating-link-underlines/ for
-the animation*/
-a[href^="#"]::before {
-    content: "";
-    position: absolute;
-    display: block;
-    width: 13%;
-    height: 2px;
-    bottom: 0;
-    left: 2px;
-    background-color: #870000;
-    transform: scaleX(0);
-    transition: transform 0.3s ease;
+  .topnavi #menu {
+    padding: 10px;
   }
-
-  a[href^="#"]:hover::before {
-      transform: scaleX(1);
+  .topnavi #order {
+    padding: 10px;
+  }
+  .topnavi #contact {
+    padding: 10px;
+  }
+  .topnavi #about {
+    padding: 10px;
+  }
+  .topnavi #cart {
+    padding: 10px;
   }
  
  .container {
-    position: absolute;
-    text-align: center;
+    position: relative;
+    font-family: "Open Sans", Roboto, Arial, sans-serif;
     width: 100%;
     top: 100px;
+    color: #000000;
   }
   
-  /* Make the image responsive */
   .container img {
+    position: absolute;
+    top: 30px;
     width: 100%;
     height: auto;
   }
 
   .container .copy1 {
     position: absolute;
-    font-size: 40px;
+    font-size: 45px;
     width: 800px;
     top: 180px;
-    left: 450px;
-    font-weight: bold;
+    left: 440px;
+    font-weight: bolder;
     font-style: italic;
-    font-family: Roboto, Arial, sans-serif;
+    font-family: "Open Sans SemiCondensed", Roboto, Arial, sans-serif;
   }
 
   .container .copy2 {
     position: absolute;
     font-size: 25px;
-    width: 550px;
+    width: 650px;
     top: 300px;
-    left: 550px;
+    left: 530px;
+    text-align: center;
     font-style: italic;
-    font-family: Roboto, Arial, sans-serif;
+    font-family: "Open Sans", Roboto, Arial, sans-serif;
   }
 
   .container .btn1 {
@@ -83,11 +77,14 @@ a[href^="#"]::before {
     color: white;
     text-decoration: none;
     font-size: 22px;
+    font-style: normal;
+    font-weight: bold;
+    text-align: center;
     padding: 12px 24px;
     border: none;
     cursor: pointer;
     border-radius: 50px;
-    font-family: Roboto, Arial, sans-serif;
+    font-family: "Open Sans", Roboto, Arial, sans-serif;
   }
   
   .container .btn2 {
@@ -99,16 +96,19 @@ a[href^="#"]::before {
     color: white;
     text-decoration: none;
     font-size: 22px;
+    font-style: normal;
+    font-weight: bold;
+    text-align: center;
     padding: 12px 24px;
     border: none;
     cursor: pointer;
     border-radius: 50px;
-    font-family: Roboto, Arial, sans-serif;
+    font-family: "Open Sans", Roboto, Arial, sans-serif;
   }
 
 
   .container .btn1:hover, .btn2:hover {
-    background-color: black;
+    background-color: #000000;
   }
 
 .order {
@@ -119,7 +119,7 @@ a[href^="#"]::before {
 
   .order h1 {
     position: absolute;
-    font-family: Roboto, Arial, sans-serif;
+    font-family: "Open Sans", Roboto, Arial, sans-serif;
     font-style: italic;
     font-size: 30px;
     top: 20px;
@@ -127,7 +127,7 @@ a[href^="#"]::before {
 
   .order h2 {
     position: absolute;
-    font-family: Roboto, Arial, sans-serif;
+    font-family: "Open Sans", Roboto, Arial, sans-serif;
     font-size: 24px;
     color: #870000;
     top: 70px;
@@ -145,7 +145,7 @@ a[href^="#"]::before {
 
     .order h3 {
       position: absolute;
-      font-family: Roboto, Arial, sans-serif;
+      font-family: "Open Sans", Roboto, Arial, sans-serif;
       font-size: 17px;
       top: 50px;
       left: 30px;
@@ -227,7 +227,7 @@ a[href^="#"]::before {
 
 .items img {
     position: absolute;
-    top: 150px;
+    top: 200px;
     left: 100px;
     width: 550px;
     height: 500px;
@@ -235,28 +235,30 @@ a[href^="#"]::before {
 
 .item-container {
   position: absolute;
-  top: 130px;
-  left: 750px;
+  top: 160px;
+  left: 770px;
   font-family: "Open Sans", Roboto, Arial, sans-serif;
   color: #424242;
 }
-
+  /* original */
   .item-container h1 {
+    position: absolute;
     font-family: "Open Sans SemiCondensed", Roboto, Arial, sans-serif;
     font-style: bold;
     font-size: 40px;
     color: #870000;
   }
-
+  /* copy */
   .item-container h2 {
     position: absolute;
-    top: 80px;
+    top: 85px;
     font-style: italic;
     font-weight: 100;
     font-size: 20px;
     width: 500px;
   }
 
+  /* glazing */
   .item-container h3 {
     position: absolute;
     top: 130px;
@@ -266,6 +268,7 @@ a[href^="#"]::before {
     width: 200px;
   }
 
+  /* glazing price */
   .item-container h4 {
     position: absolute;
     top: 135px;
@@ -273,6 +276,27 @@ a[href^="#"]::before {
     font-size: 20px;
     font-style: normal;
     font-weight: normal;
+    width: 300px;
+  }
+  /* price */
+  .item-container h5 {
+    position: absolute;
+    top: 10px;
+    left: 430px;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: normal;
+    width: 300px;
+  }
+
+  /* sold in sets of */
+  .item-container h6 {
+    position: absolute;
+    top: 393px;
+    left: 2px;
+    font-size: 15px;
+    font-style: italic;
+    font-weight: 300;
     width: 300px;
   }
 
@@ -298,6 +322,7 @@ a[href^="#"]::before {
   padding-left: 16px;
 }
 
+/* add to cart button */
 .item-container .btn3 {
   position: absolute;
   top: 450px;
@@ -315,4 +340,12 @@ a[href^="#"]::before {
   cursor: pointer;
   border-radius: 50px;
 
+}
+
+.back img {
+  position: absolute;
+  top: 140px;
+  left: 110px;
+  width: 45px;
+  height: auto;
 }

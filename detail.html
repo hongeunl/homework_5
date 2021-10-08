@@ -12,18 +12,22 @@
   </head>
 
   <body>
-    <a href="index.html">
     <div class="logo">
+      <a href="index.html">
       <img src="bunbunlogo.png" alt="logo">
-    </div></a>
+    </a></div>
 
+    <div class="back">
+      <a href="order.html">
+      <img src="leftarrow.png" alt="left-arrow">
+      </a></div>
 
     <div class="topnavi">
-        <a href="#menu" style=text-decoration:none>MENU&ensp;</a>
-        <a href="#order" style=text-decoration:none>ORDER&ensp;</a>
-        <a href="#contact" style=text-decoration:none>CONTACT&ensp;</a>
-        <a href="#about" style=text-decoration:none>ABOUT&ensp;</a>
-        <a href="#cart" style=text-decoration:none>CART&ensp;</a>
+        <a href="#menu" id="menu" style=text-decoration:none>MENU&ensp;</a>
+        <a href="order.html" id="order" style=text-decoration:none>ORDER&ensp;</a>
+        <a href="#contact" id="contact" style=text-decoration:none>CONTACT&ensp;</a>
+        <a href="#about" id="about" style=text-decoration:none>ABOUT&ensp;</a>
+        <a href="#cart" id="cart" style=text-decoration:none>CART&ensp;</a>
     </div>
 
     <div class="items">
@@ -33,6 +37,8 @@
         <h2>Our classic cinnamon roll - the most popular choice!</h2>
         <h3>Choose glazing</h3>
         <h4>(+$0.50 per roll)</h4>
+        <h5>$3.25</h5>
+        <h6>*Sold in sets of 1/3/6/12</h6>
         <p>
           <input type="radio" id="none" name="glaze" value="none">
           <label for="none">None</label><br>
@@ -46,14 +52,15 @@
 
         <select name="quantity" id=quantity>
           <option value="1">&ensp;1&ensp;</option>
-          <option value="2">&ensp;2&ensp;</option>
           <option value="3">&ensp;3&ensp;</option>
-          <option value="4">&ensp;4&ensp;</option>
+          <option value="6">&ensp;6&ensp;</option>
+          <option value="12">&ensp;12&ensp;</option>
         </select>
 
         <button class="btn3">Add to Cart</button>
 
 
 
+        </div>
       </div>
-    </div>
+    </body>
