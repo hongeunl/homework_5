@@ -1,37 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="Product Detail" content="Detail of a  specific product">
-    <title>Product Detail Page</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A detail page for original cinnamon roll">
+    <title>Original Cinnamon Roll</title>
 
-    <link rel="stylesheet" type="text/css" href="styles.css" />
-    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 
   </head>
 
   <body>
-    <div class="logo">
-      <a href="index.html">
-      <img src="bunbunlogo.png" alt="logo">
-    </a></div>
+    <div class="heading">
+      <!-- Logo -->
+      <div class="logo">
+        <a href="index.html">
+          <img src="bunbunlogo.png" alt="logo" style="width:10%;height:auto">
+        </a>
+      </div>
 
-    <div class="back">
-      <a href="order.html">
-      <img src="leftarrow.png" alt="left-arrow">
-      </a></div>
-
-    <div class="topnavi">
-        <a href="#menu" id="menu" style=text-decoration:none>MENU&ensp;</a>
-        <a href="order.html" id="order" style=text-decoration:none>ORDER&ensp;</a>
-        <a href="#contact" id="contact" style=text-decoration:none>CONTACT&ensp;</a>
-        <a href="#about" id="about" style=text-decoration:none>ABOUT&ensp;</a>
-        <a href="#cart" id="cart" style=text-decoration:none>CART&ensp;</a>
+      <!-- Navigation menu -->
+      <div class="topnavi">
+          <a href="menu.html" id="menu" style=text-decoration:none>MENU&ensp;</a>
+          <a href="order.html" id="order" style=text-decoration:none>ORDER&ensp;</a>
+          <a href="#contact" id="contact" style=text-decoration:none>CONTACT&ensp;</a>
+          <a href="#about" id="about" style=text-decoration:none>ABOUT&ensp;</a>
+          <a href="#cart" id="cart" style=text-decoration:none>CART&ensp;</a>
+      </div>
     </div>
 
+    <!-- Back button that takes users back to the Order Online page -->
+    <div class="back">
+      <a href="order.html">
+      <img src="leftarrow.png" alt="leftward/go back arrow" style="width:45px;height:auto">
+      </a>
+    </div>
+
+    <!-- Detailed information about the product -->
     <div class="items">
-      <img src="cinnamonroll_large.png" alt="Cinnamon Roll">
+      <img src="cinnamonroll_large.png" alt="Cinnamon Rolls" style="width:550px;height:500px">
       <div class="item-container">
         <h1>Original</h1>
         <h2>Our classic cinnamon roll - the most popular choice!</h2>
@@ -39,6 +47,7 @@
         <h4>(+$0.50 per roll)</h4>
         <h5>$3.25</h5>
         <h6>*Sold in sets of 1/3/6/12</h6>
+        <!-- Radio buttons for choosing the glazing -->
         <p>
           <input type="radio" id="none" name="glaze" value="none">
           <label for="none">None</label><br>
@@ -50,6 +59,7 @@
           <label for="double-chocolate">Double-Chocolate</label><br>
         </p>
 
+        <!-- Dropdown menu for selecting the quantity -->
         <select name="quantity" id=quantity>
           <option value="1">&ensp;1&ensp;</option>
           <option value="3">&ensp;3&ensp;</option>
@@ -59,8 +69,6 @@
 
         <button class="btn3">Add to Cart</button>
 
-
-
-        </div>
       </div>
-    </body>
+    </div>
+  </body>

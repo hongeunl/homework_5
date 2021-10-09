@@ -1,226 +1,240 @@
+/* GENERAL for all pages */
+.heading {
+  position: fixed;
+  width: 100%;
+  height: 100px;
+  background-color: white;
+  z-index: 1;
+  top: 0px;
+}
+
 .logo img {
-    position: fixed;
-    width: 10%;
-    top: 10px;
-    left: 20px;
+  position: fixed;
+  width: 10%;
+  top: 10px;
+  left: 20px;
 }
 
 .topnavi {
-    position: fixed;
-    text-decoration: none;
-    font-family: "Open Sans SemiCondensed", Roboto, Arial, sans-serif;
-    font-weight: bold;
-    font-size: 25px;
-    color: #870000;
-    top: 30px;
-    right: 50px;
+  position: fixed;
+  text-decoration: none;
+  font-family: 'Open Sans SemiCondensed', Arial, sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+  color: #870000;
+  top: 30px;
+  right: 50px;
 }
-  .topnavi #menu {
-    padding: 10px;
-  }
-  .topnavi #order {
-    padding: 10px;
-  }
-  .topnavi #contact {
-    padding: 10px;
-  }
-  .topnavi #about {
-    padding: 10px;
-  }
-  .topnavi #cart {
-    padding: 10px;
-  }
+
+#menu {
+  padding: 10px;
+}
+
+#order {
+  padding: 10px;
+}
+
+#contact {
+  padding: 10px;
+}
+
+#about {
+  padding: 10px;
+}
+
+#cart {
+  padding: 10px;
+}
  
- .container {
-    position: relative;
-    font-family: "Open Sans", Roboto, Arial, sans-serif;
-    width: 100%;
-    top: 100px;
-    color: #000000;
-  }
+/* HOME page */
+.container {
+  position: relative;
+  font-family: 'Open Sans', Arial, sans-serif;
+  width: 100%;
+  top: 100px;
+  color: #000000;
+}
   
-  .container img {
-    position: absolute;
-    top: 30px;
-    width: 100%;
-    height: auto;
-  }
+.container img {
+  position: absolute;
+  top: 30px;
+  width: 100%;
+  height: auto;
+}
 
-  .container .copy1 {
-    position: absolute;
-    font-size: 45px;
-    width: 800px;
-    top: 180px;
-    left: 440px;
-    font-weight: bolder;
-    font-style: italic;
-    font-family: "Open Sans SemiCondensed", Roboto, Arial, sans-serif;
-  }
+.container .copy1 {
+  position: absolute;
+  font-size: 45px;
+  width: 800px;
+  top: 180px;
+  left: 440px;
+  font-weight: bolder;
+  font-style: italic;
+  font-family: 'Open Sans SemiCondensed', Arial, sans-serif;
+}
 
-  .container .copy2 {
-    position: absolute;
-    font-size: 25px;
-    width: 650px;
-    top: 300px;
-    left: 530px;
-    text-align: center;
-    font-style: italic;
-    font-family: "Open Sans", Roboto, Arial, sans-serif;
-  }
+.container .copy2 {
+  position: absolute;
+  font-size: 25px;
+  width: 650px;
+  top: 300px;
+  left: 530px;
+  text-align: center;
+  font-style: italic;
+  font-family: 'Open Sans', Arial, sans-serif;
+}
 
-  .container .btn1 {
-    position: absolute;
-    top: 450px;
-    left: 700px;
-    width: 250px;
-    background-color: #870000;
-    color: white;
-    text-decoration: none;
-    font-size: 22px;
-    font-style: normal;
-    font-weight: bold;
-    text-align: center;
-    padding: 12px 24px;
-    border: none;
-    cursor: pointer;
-    border-radius: 50px;
-    font-family: "Open Sans", Roboto, Arial, sans-serif;
-  }
+.container .btn1 {
+  position: absolute;
+  top: 450px;
+  left: 690px;
+  width: 250px;
+  background-color: #870000;
+  color: white;
+  text-decoration: none;
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 50px;
+  font-family: 'Open Sans', Arial, sans-serif;
+}
   
-  .container .btn2 {
-    position: absolute;
-    top: 520px;
-    left: 700px;
-    width: 250px;
-    background-color: #870000;
-    color: white;
-    text-decoration: none;
-    font-size: 22px;
-    font-style: normal;
-    font-weight: bold;
-    text-align: center;
-    padding: 12px 24px;
-    border: none;
-    cursor: pointer;
-    border-radius: 50px;
-    font-family: "Open Sans", Roboto, Arial, sans-serif;
-  }
+.container .btn2 {
+  position: absolute;
+  top: 520px;
+  left: 690px;
+  width: 250px;
+  background-color: #870000;
+  color: white;
+  text-decoration: none;
+  font-size: 22px;
+  font-weight: bold;
+  text-align: center;
+  padding: 12px 24px;
+  border: none;
+  cursor: pointer;
+  border-radius: 50px;
+  font-family: 'Open Sans', Arial, sans-serif;
+}
 
+.container .btn1:hover, .btn2:hover {
+  background-color: #000000;
+}
 
-  .container .btn1:hover, .btn2:hover {
-    background-color: #000000;
-  }
-
+/* ORDER ONLINE page */
 .order {
   position: relative;
   top: 80px;
-  left: 60px;
+  left: 180px;
 }
 
-  .order h1 {
-    position: absolute;
-    font-family: "Open Sans", Roboto, Arial, sans-serif;
-    font-style: italic;
-    font-size: 30px;
-    top: 20px;
-  }
+.order h1 {
+  position: absolute;
+  font-family: 'Open Sans SemiCondensed', Arial, sans-serif;
+  font-style: italic;
+  font-size: 40px;
+  top: 20px;
+}
 
-  .order h2 {
-    position: absolute;
-    font-family: "Open Sans", Roboto, Arial, sans-serif;
-    font-size: 24px;
-    color: #870000;
-    top: 70px;
-  }
+.order h2 {
+  position: absolute;
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-size: 24px;
+  color: #870000;
+  top: 90px;
+}
 
-  .order-container1 {
-    position: absolute;
-    width: 500px;
-    height: 183px;
-    top: 140px;
-    border-style: solid;
-    border-color: #C4C4C4;
-    border-width: 1px;
-  }
+.order-container1 {
+  position: absolute;
+  width: 500px;
+  height: 183px;
+  top: 160px;
+  border-style: solid;
+  border-color: #C4C4C4;
+  border-width: 1px;
+}
 
-    .order h3 {
-      position: absolute;
-      font-family: "Open Sans", Roboto, Arial, sans-serif;
-      font-size: 17px;
-      top: 50px;
-      left: 30px;
-    }
+.order h3 {
+  position: absolute;
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-size: 17px;
+  top: 50px;
+  left: 30px;
+}
 
-    .order h4 {
-      position: absolute;
-      font-family: Roboto, Arial, sans-serif;
-      font-size: 17px;
-      font-weight:200;
-      top: 75px;
-      left: 30px;
-    }
+.order h4 {
+  position: absolute;
+  font-family: 'Open Sans', Arial, sans-serif;
+  font-size: 17px;
+  font-weight: 200;
+  top: 75px;
+  left: 30px;
+}
 
-    .order img {
-      position: absolute;
-      width: 250px;
-      height: 183px;
-      right: 0px;
-    }
+.order img {
+  position: absolute;
+  width: 250px;
+  height: 183px;
+  right: 0px;
+}
   
-  .order-container2  {
-    position: absolute;
-    width: 500px;
-    height: 183px;
-    top: 350px;
-    border-style: solid;
-    border-color: #C4C4C4;
-    border-width: 1px;
-  }
+.order-container2  {
+  position: absolute;
+  width: 500px;
+  height: 183px;
+  top: 370px;
+  border-style: solid;
+  border-color: #C4C4C4;
+  border-width: 1px;
+}
 
-  .order-container3  {
-    position: absolute;
-    width: 500px;
-    height: 183px;
-    top: 560px;
-    border-style: solid;
-    border-color: #C4C4C4;
-    border-width: 1px;
-  } 
+.order-container3  {
+  position: absolute;
+  width: 500px;
+  height: 183px;
+  top: 580px;
+  border-style: solid;
+  border-color: #C4C4C4;
+  border-width: 1px;
+} 
 
-  .order-container4  {
-    position: absolute;
-    width: 500px;
-    height: 183px;
-    top: 140px;
-    left: 700px;
-    border-style: solid;
-    border-color: #C4C4C4;
-    border-width: 1px;
-  } 
+.order-container4  {
+  position: absolute;
+  width: 500px;
+  height: 183px;
+  top: 160px;
+  left: 700px;
+  border-style: solid;
+  border-color: #C4C4C4;
+  border-width: 1px;
+} 
 
-  .order-container5  {
-    position: absolute;
-    width: 500px;
-    height: 183px;
-    top: 350px;
-    left: 700px;
-    border-style: solid;
-    border-color: #C4C4C4;
-    border-width: 1px;
-  } 
+.order-container5  {
+  position: absolute;
+  width: 500px;
+  height: 183px;
+  top: 370px;
+  left: 700px;
+  border-style: solid;
+  border-color: #C4C4C4;
+  border-width: 1px;
+} 
 
-  .order-container6  {
-    position: absolute;
-    width: 500px;
-    height: 183px;
-    top: 560px;
-    left: 700px;
-    border-style: solid;
-    border-color: #C4C4C4;
-    border-width: 1px;
-  } 
+.order-container6  {
+  position: absolute;
+  width: 500px;
+  height: 183px;
+  top: 580px;
+  left: 700px;
+  border-style: solid;
+  border-color: #C4C4C4;
+  border-width: 1px;
+} 
 
-/* For Product Details Page */
+/* PRODUCT DETAIL Page */
 .items {
   position: relative;
 }
@@ -237,79 +251,76 @@
   position: absolute;
   top: 160px;
   left: 770px;
-  font-family: "Open Sans", Roboto, Arial, sans-serif;
+  font-family: 'Open Sans', Arial, sans-serif;
   color: #424242;
 }
-  /* original */
-  .item-container h1 {
-    position: absolute;
-    font-family: "Open Sans SemiCondensed", Roboto, Arial, sans-serif;
-    font-style: bold;
-    font-size: 40px;
-    color: #870000;
-  }
-  /* copy */
-  .item-container h2 {
-    position: absolute;
-    top: 85px;
-    font-style: italic;
-    font-weight: 100;
-    font-size: 20px;
-    width: 500px;
-  }
 
-  /* glazing */
-  .item-container h3 {
-    position: absolute;
-    top: 130px;
-    font-size: 26px;
-    font-style: normal;
-    font-weight: 600;
-    width: 200px;
-  }
+/* Flavor */
+.item-container h1 {
+  position: absolute;
+  font-family: 'Open Sans SemiCondensed', Arial, sans-serif;
+  font-weight: bold;
+  font-size: 40px;
+  color: #870000;
+}
 
-  /* glazing price */
-  .item-container h4 {
-    position: absolute;
-    top: 135px;
-    left: 200px;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: normal;
-    width: 300px;
-  }
-  /* price */
-  .item-container h5 {
-    position: absolute;
-    top: 10px;
-    left: 430px;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: normal;
-    width: 300px;
-  }
+/* Flavor introduction */
+.item-container h2 {
+  position: absolute;
+  top: 85px;
+  font-style: italic;
+  font-weight: 100;
+  font-size: 20px;
+  width: 500px;
+}
 
-  /* sold in sets of */
-  .item-container h6 {
-    position: absolute;
-    top: 393px;
-    left: 2px;
-    font-size: 15px;
-    font-style: italic;
-    font-weight: 300;
-    width: 300px;
-  }
+/* Glazing */
+.item-container h3 {
+  position: absolute;
+  top: 130px;
+  font-size: 26px;
+  font-weight: 600;
+  width: 200px;
+}
 
-  .item-container p {
-    position: absolute;
-    top: 180px;
-    width: 500px;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 20px;
-    line-height: 38px;
-  }
+/* Glazing price */
+.item-container h4 {
+  position: absolute;
+  top: 135px;
+  left: 200px;
+  font-size: 20px;
+  width: 300px;
+}
 
+/* Roll price */
+.item-container h5 {
+  position: absolute;
+  top: 10px;
+  left: 430px;
+  font-size: 20px;
+  width: 300px;
+}
+
+/* Sold in sets of */
+.item-container h6 {
+  position: absolute;
+  top: 393px;
+  left: 2px;
+  font-size: 15px;
+  font-style: italic;
+  font-weight: 300;
+  width: 300px;
+}
+
+.item-container p {
+  position: absolute;
+  top: 180px;
+  width: 500px;
+  font-size: 20px;
+  line-height: 38px;
+}
+
+/* A dropdown for choosing quantity */
 .item-container #quantity {
   position: absolute;
   top: 455px;
@@ -322,14 +333,13 @@
   padding-left: 16px;
 }
 
-/* add to cart button */
+/* Add to cart button */
 .item-container .btn3 {
   position: absolute;
   top: 450px;
   left: 300px;
   width: 200px;
   font-size: 20px;
-  font-style: normal;
   font-weight: bold;
   text-align: center;
   background-color: #870000;
@@ -339,7 +349,6 @@
   border: none;
   cursor: pointer;
   border-radius: 50px;
-
 }
 
 .back img {
@@ -348,4 +357,25 @@
   left: 110px;
   width: 45px;
   height: auto;
+}
+
+/* MENU Page */
+.menu h1 {
+  position: absolute;
+  font-family: 'Open Sans SemiCondensed', Arial, sans-serif;
+  font-style: italic;
+  font-size: 40px;
+  top: 110px;
+  left: 190px;
+}
+
+.menu img {
+  position: absolute;
+  width: 60%;
+  top: 240px;
+  left: 320px;
+}
+
+.menu body {
+  padding-bottom: 50px;
 }
