@@ -27,23 +27,39 @@
 }
 
 #menu {
-  padding: 10px;
+  color: #870000;
+  margin: 10px;
 }
 
 #order {
-  padding: 10px;
+  color: #870000;
+  margin: 10px;
 }
 
 #contact {
-  padding: 10px;
+  color: #870000;
+  margin: 10px;
 }
 
 #about {
-  padding: 10px;
+  color: #870000;
+  margin: 10px;
 }
 
 #cart {
-  padding: 10px;
+  color: #870000;
+  margin: 10px;
+}
+
+#cart img {
+  position: absolute;
+  top: 1px;
+  left: 610px;
+}
+
+#menu:hover, #order:hover {
+  color: #422308;
+  border-bottom: 3px solid #422308;
 }
  
 /* HOME page */
@@ -52,7 +68,7 @@
   font-family: 'Open Sans', Arial, sans-serif;
   width: 100%;
   top: 100px;
-  color: #000000;
+  color: #422308;
 }
   
 .container img {
@@ -67,7 +83,7 @@
   font-size: 45px;
   width: 800px;
   top: 180px;
-  left: 440px;
+  left: 460px;
   font-weight: bolder;
   font-style: italic;
   font-family: 'Open Sans SemiCondensed', Arial, sans-serif;
@@ -82,6 +98,7 @@
   text-align: center;
   font-style: italic;
   font-family: 'Open Sans', Arial, sans-serif;
+  font-weight: bold;
 }
 
 .container .btn1 {
@@ -120,15 +137,12 @@
   font-family: 'Open Sans', Arial, sans-serif;
 }
 
-.container .btn1:hover, .btn2:hover {
-  background-color: #000000;
-}
-
 /* ORDER ONLINE page */
 .order {
   position: relative;
   top: 80px;
   left: 180px;
+  color: #422308;
 }
 
 .order h1 {
@@ -143,6 +157,7 @@
   position: absolute;
   font-family: 'Open Sans', Arial, sans-serif;
   font-size: 24px;
+  font-weight: bolder;
   color: #870000;
   top: 90px;
 }
@@ -152,6 +167,7 @@
   width: 500px;
   height: 183px;
   top: 160px;
+  color: black;
   border-style: solid;
   border-color: #C4C4C4;
   border-width: 1px;
@@ -240,11 +256,11 @@
 }
 
 .items img {
-    position: absolute;
-    top: 200px;
-    left: 100px;
-    width: 550px;
-    height: 500px;
+  position: absolute;
+  top: 200px;
+  left: 100px;
+  width: 550px;
+  height: 500px;
 }
 
 .item-container {
@@ -279,7 +295,7 @@
   position: absolute;
   top: 130px;
   font-size: 26px;
-  font-weight: 600;
+  font-weight: bolder;
   width: 200px;
 }
 
@@ -304,7 +320,7 @@
 /* Sold in sets of */
 .item-container h6 {
   position: absolute;
-  top: 393px;
+  top: 390px;
   left: 2px;
   font-size: 15px;
   font-style: italic;
@@ -360,8 +376,17 @@
 }
 
 /* MENU Page */
+.heading-menu #menu {
+  border-bottom: 3px solid #870000;
+}
+
+.heading-order #order {
+  border-bottom: 3px solid #870000;
+}
+
 .menu h1 {
   position: absolute;
+  color: #422308;
   font-family: 'Open Sans SemiCondensed', Arial, sans-serif;
   font-style: italic;
   font-size: 40px;
@@ -372,10 +397,110 @@
 .menu img {
   position: absolute;
   width: 60%;
-  top: 240px;
+  top: 300px;
   left: 320px;
 }
 
 .menu body {
   padding-bottom: 50px;
+}
+
+.view-pdf-btn {
+  position: absolute;
+  top: 210px;
+  left: 190px;
+  background-color: white;
+  border: 3px solid #870000;
+  box-sizing: border-box;
+  border-radius: 47px;
+  color: #870000;
+  cursor: pointer;
+  font-size: 20px;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-weight: bold;
+  text-align: center;
+  line-height: 20px;
+  padding: 9px 10px;
+  width: 179px;
+  
+}
+
+.view-pdf-btn:hover {
+  color: #422308;
+  border-color: #422308;
+}
+
+.call-to-action {
+  position: absolute;
+  top: 1400px;
+  left: 350px;
+  padding-bottom: 400px;
+}
+
+.order-text {
+  position: absolute;
+  top: 200px;
+  left: 110px;
+  font-family: "Open Sans SemiCondensed", Arial, sans-serif;
+  font-style: italic;
+  font-weight: 800;
+  font-size: 33px;
+  line-height: 72px;
+  width: 420px;
+  color: #424242;
+}
+
+.visit-text {
+  position: absolute;
+  top: 200px;
+  left: 530px;
+  font-family: "Open Sans SemiCondensed", Arial, sans-serif;
+  font-style: italic;
+  font-weight: 800;
+  font-size: 33px;
+  line-height: 72px;
+  width: 420px;
+  color: #424242;
+}
+
+.btn4 {
+  position: absolute;
+  top: 300px;
+  left: 135px;
+  background-color: #870000;
+  box-sizing: border-box;
+  border-radius: 47px;
+  color: white;
+  cursor: pointer;
+  font-size: 20px;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-weight: bolder;
+  text-align: center;
+  text-decoration: none;
+  line-height: 20px;
+  padding: 9px 10px;
+  width: 200px;
+}
+
+.btn5 {
+  position: absolute;
+  top: 300px;
+  left: 560px;
+  background-color: #870000;
+  box-sizing: border-box;
+  border-radius: 47px;
+  color: white;
+  cursor: pointer;
+  font-size: 20px;
+  font-family: "Open Sans", Arial, sans-serif;
+  font-weight: bolder;
+  text-align: center;
+  text-decoration: none;
+  line-height: 20px;
+  padding: 9px 10px;
+  width: 200px;
+}
+
+.btn1:hover, .btn2:hover, .btn3:hover, .btn4:hover, .btn5:hover {
+  background-color: #422308;
 }
